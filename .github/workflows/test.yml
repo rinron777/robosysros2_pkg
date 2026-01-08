@@ -28,5 +28,5 @@ jobs:
 
       - name: Run test.bash
         run: |
-          bash ros2_ws/test.bash
+          bash test.bash
 
