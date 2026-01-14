@@ -11,6 +11,12 @@
 
 ## 使用方法
 
+### 必要なライブラリがインストールしてください。
+- 以下のコマンドを実行してください。
+```
+pip3 install psutil
+```
+
 ### 実行方法
 
 #### CPU使用率を取得するには、以下のノードを実行します。
@@ -26,16 +32,6 @@ ros2 run robosysros2_pkg cpu_usage_listener
 #### Subscriber
 ```
 [INFO] [cpu_usage_listener]: Listen: CPU Usage: 12.5%
-```
-### エラー例
-
-#### 必要なライブラリがインストールされていない場合
-```
-ModuleNotFoundError: No module named 'psutil'
-```
-- psutilをインストールしてください(以下のコマンドを実行)
-```
-pip3 install psutil
 ```
 
 ## テスト環境
