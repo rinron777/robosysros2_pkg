@@ -19,18 +19,20 @@ pip3 install psutil
 
 ### 実行方法
 
-#### CPU使用率を取得するには、以下のノードを実行します。
+#### CPU使用率を取得しトピックにpublishするには、以下のノードを実行します。
 ```
 ros2 run robosysros2_pkg cpu_usage_publisher
+
+# 実行例
+
+[INFO] [cpu_usage_publisher]: Publish CPU Usage: 12.5%
 ```
-#### CPU使用率を取得するには、以下のノードを実行します。
+#### CPU使用率を取得するには、以下のノードを実行します。(別の端末で実行します)
 ```
 ros2 run robosysros2_pkg cpu_usage_listener
-```
-- 実行例
 
-#### Subscriber
-```
+# 実行例
+
 [INFO] [cpu_usage_listener]: Listen: CPU Usage: 12.5%
 ```
 
