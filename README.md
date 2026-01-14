@@ -11,7 +11,7 @@
 
 ## 使用方法
 
-### 必要なライブラリがインストールしてください。
+### 必要なライブラリをインストールしてください。
 - 以下のコマンドを実行してください。
 ```
 pip3 install psutil
@@ -27,7 +27,7 @@ ros2 run robosysros2_pkg cpu_usage_publisher
 ```
 ros2 run robosysros2_pkg cpu_usage_listener
 ```
-### 実行例
+- 実行例
 
 #### Subscriber
 ```
