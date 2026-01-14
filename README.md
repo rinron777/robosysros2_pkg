@@ -23,7 +23,6 @@ pip3 install psutil
 ```
 ros2 run robosysros2_pkg cpu_usage_publisher
 
-# 実行例
 
 [INFO] [cpu_usage_publisher]: Publish CPU Usage: 12.5%
 ```
@@ -31,7 +30,6 @@ ros2 run robosysros2_pkg cpu_usage_publisher
 ```
 ros2 run robosysros2_pkg cpu_usage_listener
 
-# 実行例
 
 [INFO] [cpu_usage_listener]: Listen: CPU Usage: 12.5%
 ```
