@@ -1,6 +1,6 @@
 
 # Copyright (c) 2025 Rintarou Matsunaga
-# Licensed under the BSD 3-Clause License.
+# SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
 from rclpy.node import Node
