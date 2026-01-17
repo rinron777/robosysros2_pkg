@@ -8,6 +8,8 @@
 - 取得したCPU使用率はROS2のトピック通信を用いて配信されます。
 - PublisherノードがCPU使用率を取得し、数値データとしてPublishします。
 - Subscriberノードがトピックを読み込み、受信したCPU使用率を標準出力に表示します。
+- このパッケージは、CPU使用率をトピックとしてpublishするROS2ノードを提供します。
+- 他のROS 2パッケージから subscribe することで、システム負荷に応じた動作制御やログ取得に利用できます。
 
 ## 使用方法
 
@@ -22,16 +24,16 @@ pip3 install psutil
 #### CPU使用率を取得しトピックにpublishするには、以下のノードを実行します。
 ```
 ros2 run robosysros2_pkg cpu_usage_publisher
-
-
-[INFO] [cpu_usage_publisher]: Publish CPU Usage: 12.5%
 ```
 #### CPU使用率を取得するには、以下のノードを実行します。(別の端末で実行します)
 ```
 ros2 run robosysros2_pkg cpu_usage_listener
+```
+#### publish されているCPU使用率を確認するには以下のコマンドを実行してください。
+```
+ros2 topic echo /cpu_usage
 
-
-[INFO] [cpu_usage_listener]: Listen: CPU Usage: 12.5%
+data: 12.5
 ```
 
 ## テスト環境
