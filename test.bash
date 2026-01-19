@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2025 Rintarou Matsunaga
+# SPDX-FileCopyrightText: 2025 Rintarou Matsunaga
 # SPDX-License-Identifier: BSD-3-Clause
 
 set -e
@@ -17,5 +17,9 @@ sleep 2
 timeout 5 ros2 run robosysros2_pkg cpu_usage_publisher > /tmp/publisher.log 2>&1 &
 sleep 3
 
+echo "=== listener.log ==="
+cat /tmp/listener.log
+
 grep "CPU Usage" /tmp/listener.log
+
 
