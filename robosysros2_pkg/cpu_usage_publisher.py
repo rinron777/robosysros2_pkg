@@ -1,5 +1,4 @@
-
-# Copyright (c) 2025 Rintarou Matsunaga
+# SPDX-FileCopyrightText: 2025 Rintarou Matsunaga
 # SPDX-License-Identifier: BSD-3-Clause
 
 import rclpy
